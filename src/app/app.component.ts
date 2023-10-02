@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DialogBComponent } from './dialog-b/dialog-b.component';
+import  {MatDialog} from '@angular/material/dialog'
 
 @Component({
   selector: 'app-root',
