@@ -9,4 +9,12 @@ import  {MatDialog} from '@angular/material/dialog'
 })
 export class AppComponent {
   title = 'angular-dialog';
+  constructor (private matDialog: MatDialog) {}
+
+  openDialog(){
+    this.matDialog.open(DialogBComponent,{
+    width: '350px'
+    })
+  }
+
 }

@@ -1,1 +1,31 @@
-<p>dialog-b works!</p>
+<button mat-icon-button style="float: right; margin:5px" matDialogClose>
+  <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content>
+  <header>
+    <h1>Contactanos</h1>
+    <p>
+      <mat-form-field appearance="fill">
+      <input matInput placeholder="Name">
+      <mat-icon matSuffix>person</mat-icon>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+      <input matInput placeholder="Email">
+      <mat-icon matSuffix>drafts</mat-icon>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+      <input matInput placeholder="TextArea">
+      <mat-icon matSuffix>save</mat-icon>
+      </mat-form-field>
+    </p>
+  </header>
+</mat-dialog-content>
+<mat-dialog-actions aling="end">
+  <button mat-raised-button color="primary">Save</button>
+  <button mat-raised-button color="warn" matDialogClose>Cancel</button>
+</mat-dialog-actions>
+
